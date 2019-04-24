@@ -14,4 +14,4 @@ __kernel void convolution(__global double *a, __global double *b, __global doubl
             }
         }
     }
-}j[
+}
