@@ -1,0 +1,4 @@
+/home/olya/CLION/clion-2018.1.6/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/olya/hpcourse/hse/BPM161/alyokhina/02.OpenCL
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/olya/hpcourse/hse/BPM161/alyokhina/02.OpenCL/cmake-build-debug
