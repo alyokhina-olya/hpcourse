@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <cmath>
 
 
 using namespace std;
@@ -80,7 +81,8 @@ int main() {
         kernel_gmem.setArg(2, dev_c);
         kernel_gmem.setArg(3, static_cast<int>(n));
         kernel_gmem.setArg(4, static_cast<int>(m));
-        queue.enqueueNDRangeKernel(kernel_gmem, cl::NullRange, cl::NDRange((n * n) / block_size * block_size),
+        auto thr = static_cast<size_t>(ceil(((double) n * n) / block_size) * block_size);
+        queue.enqueueNDRangeKernel(kernel_gmem, cl::NullRange, cl::NDRange(thr),
                                    cl::NDRange(block_size));
         queue.enqueueReadBuffer(dev_c, CL_TRUE, 0, sizeof(double) * n * n, &c[0]);
         ofstream out("output.txt");
