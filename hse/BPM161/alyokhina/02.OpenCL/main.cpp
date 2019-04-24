@@ -79,8 +79,9 @@ int main() {
         kernel_gmem.setArg(1, dev_b);
         kernel_gmem.setArg(2, dev_c);
         kernel_gmem.setArg(3, static_cast<int>(n));
-        kernel_gmem.setArg(4, static_cast<int>(n));
-        queue.enqueueNDRangeKernel(kernel_gmem, cl::NullRange, cl::NDRange(n * n), cl::NDRange(block_size));
+        kernel_gmem.setArg(4, static_cast<int>(m));
+        queue.enqueueNDRangeKernel(kernel_gmem, cl::NullRange, cl::NDRange((n * n) / block_size * block_size),
+                                   cl::NDRange(block_size));
         queue.enqueueReadBuffer(dev_c, CL_TRUE, 0, sizeof(double) * n * n, &c[0]);
         ofstream out("output.txt");
         for (size_t i = 0; i < n; ++i) {

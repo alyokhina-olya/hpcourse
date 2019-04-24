@@ -5,7 +5,7 @@ __kernel void convolution(__global double *a, __global double *b, __global doubl
     }
     int hm = (m - 1) / 2;
     int i = id / n;
-    int j = id % m;
+    int j = id % n;
     c[id] = 0;
     for (int k = -hm; k <= hm; k++) {
         for (int l = -hm; l <= hm; l++) {
@@ -14,4 +14,4 @@ __kernel void convolution(__global double *a, __global double *b, __global doubl
             }
         }
     }
-}
+}j[
