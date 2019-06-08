@@ -1,0 +1,14 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree
+-- Looking for CL_VERSION_2_2
+-- Looking for CL_VERSION_2_2 - not found
+-- Looking for CL_VERSION_2_1
+-- Looking for CL_VERSION_2_1 - not found
+-- Looking for CL_VERSION_2_0
+-- Looking for CL_VERSION_2_0 - not found
+-- Looking for CL_VERSION_1_2
+-- Looking for CL_VERSION_1_2 - found
+-- Found OpenCL: /System/Library/Frameworks/OpenCL.framework (found version "1.2") 
+/System/Library/Frameworks/OpenCL.framework
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug

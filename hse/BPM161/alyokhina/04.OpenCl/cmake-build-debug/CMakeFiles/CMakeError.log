@@ -1,0 +1,87 @@
+Determining if the CL_VERSION_2_2 exist failed with the following output:
+Change Dir: /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4ee6/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f4ee6.dir/build.make CMakeFiles/cmTC_f4ee6.dir/build
+Building C object CMakeFiles/cmTC_f4ee6.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f4ee6.dir/CheckSymbolExists.c.o   -c /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_2'
+  return ((int*)(&CL_VERSION_2_2))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f4ee6.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_f4ee6/fast] Error 2
+
+File /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_2
+  return ((int*)(&CL_VERSION_2_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_2_1 exist failed with the following output:
+Change Dir: /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_459fe/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_459fe.dir/build.make CMakeFiles/cmTC_459fe.dir/build
+Building C object CMakeFiles/cmTC_459fe.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_459fe.dir/CheckSymbolExists.c.o   -c /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_1'
+  return ((int*)(&CL_VERSION_2_1))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_459fe.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_459fe/fast] Error 2
+
+File /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_1
+  return ((int*)(&CL_VERSION_2_1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_2_0 exist failed with the following output:
+Change Dir: /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0fa0b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0fa0b.dir/build.make CMakeFiles/cmTC_0fa0b.dir/build
+Building C object CMakeFiles/cmTC_0fa0b.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_0fa0b.dir/CheckSymbolExists.c.o   -c /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_0'
+  return ((int*)(&CL_VERSION_2_0))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0fa0b.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_0fa0b/fast] Error 2
+
+File /Users/alyokhina-o/hpcourse/hse/BPM161/alyokhina/04.LockFree/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_0
+  return ((int*)(&CL_VERSION_2_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
